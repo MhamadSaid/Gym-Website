@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  background: #f35903;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: linear-gradient(92.23deg, #d35106 21.43%, #d35106 50.63%);
+}
+
+.active,
+.nav-link:hover {
+  color: #f35903 !important;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[35px] px-4 text-sm;
+  }
+  .btn-md {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#f35903] to-[#f35b03da] font-bold font-primary hover:from-[#ff6756] hover:to-[#ff42a6];
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
