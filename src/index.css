@@ -34,6 +34,21 @@
   transition: all 0.3s ease;
 }
 
+.Bg-home {
+  background-image: url("./assets/bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.6;
+  z-index: 50;
+}
+.TextContainer {
+  z-index: 0;
+  color: #ffffff;
+}
+.mix-blend-difference {
+  mix-blend-mode: difference;
+}
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;
