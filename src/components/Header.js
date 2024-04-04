@@ -34,7 +34,7 @@ function Header() {
                 to="home"
                 className="text-2xl font-bold uppercase cursor-pointer"
               >
-                Gym<span className="text-[#f35903]">Genesis</span>
+                Gym<span className="text-accent">Genesis</span>
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-14">
@@ -124,7 +124,7 @@ function Header() {
                 Contact
               </Link>
             </div>
-            <div className="md:hidden">
+            <div className="md:hidden ">
               <button
                 className="text-3xl text-[#555555] cursor-pointer"
                 onClick={handleToggleNav}
@@ -132,7 +132,7 @@ function Header() {
                 <IoMdMenu color="#f35903" />
               </button>
             </div>
-            <div className="max-w-max hidden md:flex">
+            <div className="max-w-max hidden sm:flex">
               <a
                 className="btn btn-sm flex items-center justify-center"
                 href="https://wa.me/+96103123456"
