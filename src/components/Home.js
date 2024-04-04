@@ -1,19 +1,13 @@
 import React from "react";
-import gymBackground from "../assets/bg.jpg";
+
 import { Link } from "react-scroll";
 
 function Home() {
-  const backgroundStyle = {
-    backgroundImage: `url(${gymBackground})`,
-    backgroundSize: "cover",
-    height: "100vh",
-  };
-
   return (
-    <div id="home" style={backgroundStyle}>
+    <div id="home" className="Bg-home">
       <div className="h-screen flex justify-center items-center">
-        <div className="container text-center text-white font-bold">
-          <div className="bottom-2">
+        <div className="container text-centertext-white font-bold">
+          <div className="bottom-2 TextContainer">
             <div className="flex flex-col mt-44 items-center">
               <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5">
                 Unleash the Warrior Within
