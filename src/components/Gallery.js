@@ -11,8 +11,8 @@ function Gallery() {
   const galleryImages = [image1, image2, image3, image4, image5, image6];
 
   return (
-    <div id="gallery" className="gallery-container p-20">
-      <h2 className="text-4xl font-bold mb-8 text-[#f35903]">Gallery</h2>
+    <div id="gallery" className="gallery-container lg:px-32 lg:py-64 px-0 py-0">
+      <h2 className="h2 text-accent font-bold mb-8">Gallery</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3">
         {galleryImages.map((imageUrl, index) => (
           <div key={index} className="gallery-item">
